@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+}
+
+#index-body {
+    background: linear-gradient(to right, #654ea3 , #eaafc8); 
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+#morning-body, #rise {
+    background-image: url(img/sun-rise.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    padding: 100px 0;
+}
+
+#night-body, #set {
+    background-image: url(img/sun-set.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    padding: 100px 0;
+}
+
+/** index style **/
+
+#set, #rise {
+    background-color: whitesmoke;
+    width: 350px;
+    height: 350px;
+    border-radius: 20px;
+    margin: 30% auto;
+    box-shadow: 0px 0px 14px 4px rgb(14 14 14 / 12%);
+    text-align: center;
+    font-size: 70px;
+    font-family: 'Kufam', cursive;
+    opacity: 90%;
+    text-shadow: 2px 2px 3px #312f2f;
+    border: whitesmoke solid 2px;
+    background-attachment: unset;
+}
+
+#set:hover, #rise:hover {
+    opacity: 80%;
+    border: whitesmoke solid 2px;
+    box-shadow: 0px 0px 14px 4px rgb(14 14 14 / 12%);
+}
+
+#set {
+    margin-right: 5%;
+}
+
+#rise {
+    margin-left: 5%;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+/** morning and night style **/
+
+.azkar {
+    background-color: whitesmoke;
+    width: 55%;
+    height: auto;
+    border-radius: 20px;
+    margin : 30px auto;
+    box-shadow: 0px 0px 14px 4px rgb(14 14 14 / 12%);
+    text-align: center;
+    color: rgb(47, 51, 75);
+    font-size: 35px;
+    font-family: 'Amiri', serif;
+    opacity: 80%;
+    border: rgb(47, 51, 75) solid 2px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto 60px;
+}
+
+p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.read {
+    padding: 30px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    border-bottom: rgb(47, 51, 75) solid 2px;
+}
+
+.repeat {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    border-left: rgb(47, 51, 75) solid 2px;
+    user-select: none;
+    border-radius: 0 0 20px 0;
+}
+
+.repeat:hover {
+    background-color: white;
+}
+
+.listen {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin: auto;
+}
+
+.listen:focus {
+    outline: none;
+}
